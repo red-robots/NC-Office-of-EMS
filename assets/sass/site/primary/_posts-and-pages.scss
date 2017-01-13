@@ -1,28 +1,71 @@
-.sticky {
-	display: block;
-}
+.template-index {
+  #home-banner-container {
+    width: 100%;
+    margin: 10px auto 40px auto;
+    position: relative;
+    float: left;
+    .flexslider {
+      ul.slides {
+        li {
+          a {
+          }
+          #home-banner-pic {
+            width: 100%;
+            float: left;
+            position: relative;
+            @media screen and (min-width: $tabwidth) {
+              width: 55%;
+            }
+            img {
+              width: 100%;
+            }
+          }
+          #home-banner-right {
+            width: 100%;
+            float:left;
+            position: relative;
+            font-family: 'Carrois Gothic', sans-serif;
+            background-color: #765488;
+            padding: 20px;
+            color: #fff;
+            @media screen and (min-width: $tabwidth) {
+              width: 45%;
+            }
+            h2 {
+              font-size: 18px;
+              text-align: center;
+              width: auto;
+              margin: 0 0 5px 0;
 
-.hentry {
-	margin: 0 0 1.5em;
-}
-
-.byline,
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+              font-weight: normal !important;
+              @media screen and (min-width: $tabwidth) {
+                margin: 0;
+                text-align: left;
+                float: left;
+                font-size: 16px;
+              }
+              @media screen and (min-width: $deskwidth) {
+                position: absolute;
+                top:28px;
+                left: 20px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #banner-star {
+      display: none;
+      @media screen and (min-width: $deskwidth) {
+        width: 170px;
+        height:172px;
+        position: absolute;
+        bottom: -25px;
+        right: -25px;
+        display: block;
+        z-index: 1000;
+      }
+    }
+  }
 }
