@@ -25,9 +25,22 @@
 	<div id="content" class="site-content wrapper">
         <header id="masthead" class="site-header" role="banner">
             <div class="wrapper">
-                <nav id="site-navigation" class="main-navigation" role="navigation">
+                <div class="row-1">
+	                <?php $description  = get_field("header_copy","option");?>
+                    <div class="logo column-1">
+                        <a href="<?php bloginfo('url');?>">
+                            <img src="<?php echo get_template_directory_uri().'/images/logo.png';?>" alt="logo">
+                        </a>
+                    </div><!--.logo .column-1-->
+                    <?php if($description):?>
+                        <div class="column-2 copy">
+                            <?php echo $description;?>
+                        </div><!--.column-2-->
+                    <?php endif;?>
+                </div><!--.row-1-->
+                <nav id="site-navigation" class="main-navigation row-2" role="navigation">
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                 </nav><!-- #site-navigation -->
             </div><!-- wrapper -->
         </header><!-- #masthead -->
