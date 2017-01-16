@@ -25,11 +25,12 @@
 	<div id="content" class="site-content wrapper">
         <header id="masthead" class="site-header" role="banner">
             <div class="wrapper">
-                <div class="row-1">
+                <div class="row-1 clear-bottom">
 	                <?php $description  = get_field("header_copy","option");?>
                     <div class="logo column-1">
-                        <a href="<?php bloginfo('url');?>">
-                            <img src="<?php echo get_template_directory_uri().'/images/logo.png';?>" alt="logo">
+                        <a href="<?php bloginfo('url');?>" class="clear-bottom">
+                            <img src="<?php echo get_template_directory_uri().'/images/logo1.png';?>" alt="logo NCOEMS">
+                            <img src="<?php echo get_template_directory_uri().'/images/logo2.png';?>" alt="logo HPRRP">
                         </a>
                     </div><!--.logo .column-1-->
                     <?php if($description):?>

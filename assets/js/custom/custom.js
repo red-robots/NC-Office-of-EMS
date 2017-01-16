@@ -23,10 +23,11 @@ jQuery(document).ready(function ($) {
 	*	Flexslider
 	*
 	------------------------------------*/
-	$('.flexslider').flexslider({
-		animation: "slide",
-	}); // end register flexslider
-	
+	$('.flexslider').imagesLoaded( function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+        }); // end register flexslider
+    });
 	/*
 	*
 	*	Colorbox
