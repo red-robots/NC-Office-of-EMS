@@ -26,6 +26,7 @@ jQuery(document).ready(function ($) {
 	$('.flexslider').imagesLoaded( function() {
         $('.flexslider').flexslider({
             animation: "slide",
+            smoothHeight: true,
         }); // end register flexslider
     });
 	/*

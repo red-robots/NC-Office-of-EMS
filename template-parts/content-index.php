@@ -8,7 +8,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( "template-index" ); ?>>
 	<?php get_template_part( 'template-parts/slides', 'index' ); ?>
-    <div class="row-2 clear-bottom">
+    <div class="row-2">
+        <?php $post = get_post(82);
+        setup_postdata($post);
+        $title = get_field("sub_title");
+        $copy = get_field("copy");
+        if($title):?>
+            <h2><?php echo $title;?></h2>
+        <?php endif;
+        if($copy):?>
+            <div class="copy">
+                <?php echo $copy;?>
+            </div>
+        <?php endif;
+        wp_reset_postdata();?>
+    </div><!--.row-2-->
+    <div class="row-3 clear-bottom">
         <div id="map">
             <img src="<?php echo get_template_directory_uri(); ?>/images/map.png" alt=""
                  usemap="#map" border="0" class="map"/>
@@ -128,5 +143,5 @@
                 </li>
             </ul>
         </div><!--list-->
-    </div>
+    </div><!--.row-3-->
 </article><!-- #post-## -->

@@ -27,12 +27,20 @@
             <div class="wrapper">
                 <div class="row-1 clear-bottom">
 	                <?php $description  = get_field("header_copy","option");?>
-                    <div class="logo column-1">
+                    <?php if(is_front_page()):?>
+                        <h1 class="logo column-1">
+                    <?php else: ?>
+                        <div class="logo column-1">
+                    <?php endif;?>
                         <a href="<?php bloginfo('url');?>" class="clear-bottom">
-                            <img src="<?php echo get_template_directory_uri().'/images/logo1.png';?>" alt="logo NCOEMS">
-                            <img src="<?php echo get_template_directory_uri().'/images/logo2.png';?>" alt="logo HPRRP">
+                            <img src="<?php echo get_template_directory_uri().'/images/logo1.png';?>" alt="NCOEMS">
+                            <img src="<?php echo get_template_directory_uri().'/images/logo2.png';?>" alt="HPRRP">
                         </a>
-                    </div><!--.logo .column-1-->
+	                <?php if(is_front_page()):?>
+                        </h1>
+		            <?php else: ?>
+                        </div><!--.logo .column-1-->
+			        <?php endif;?>
                     <?php if($description):?>
                         <div class="column-2 copy">
                             <?php echo $description;?>

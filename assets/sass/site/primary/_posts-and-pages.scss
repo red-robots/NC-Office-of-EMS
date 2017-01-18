@@ -2,6 +2,7 @@
   #home-banner-container {
     width: 100%;
     margin: 10px auto 40px auto;
+    position: relative;
     .flexslider {
       ul.slides {
         li {
@@ -103,6 +104,17 @@
     }
   }
   > .row-2 {
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      border-bottom: 4px solid black;
+      text-transform: uppercase;
+    }
+    .copy {
+      margin: 40px 0;
+    }
+  }
+  > .row-3 {
     #map {
       display: none;
       @media screen and (min-width: $tabwidth) {
@@ -224,6 +236,36 @@
           }
         }
       }
+    }
+  }
+}
+.template-tools {
+  >.column-1 {
+    ul {
+      padding: 0;
+      margin: 0 0 0 20px;
+      font-size: inherit;
+      li {
+        margin: 0 0 10px 20px;
+        font-size: inherit;
+        padding: 0;
+        &:last-child {
+          margin: 0 0 0 20px;
+        }
+        a {
+        }
+        ul.sub-menu {
+          margin: 0;
+        }
+      }
+    }
+  }
+  >.column-2 {
+    h1 {
+      margin: 0;
+    }
+    .copy {
+
     }
   }
 }
