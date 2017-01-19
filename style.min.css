@@ -1400,10 +1400,10 @@ a{outline:0;color:#21759b;text-decoration:none}
 .copy ul,.copy ol{padding:0;margin:0 0 10px 10px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0 0 0 20px;font-size:inherit;padding:0}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
-#page{width:100%}
+#page{width:100%;background-image:url("images/background.png");background-repeat:repeat}
 #page #content{width:90%;padding:0 20px 20px 20px;margin:0 auto;background-color:white}
 @media screen and (min-width:600px){#page #content{padding:0 5% 20px 5%}
-}#page #content #masthead>.wrapper>.row-1{margin:10px auto 20px auto}
+}#page #content #masthead>.wrapper>.row-1{padding:10px 0 20px 0;margin:0 auto}
 @media screen and (min-width:600px){#page #content #masthead>.wrapper>.row-1{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 }#page #content #masthead>.wrapper>.row-1>.column-1{width:80%;margin:0 auto 10px auto}
 @media screen and (min-width:350px){#page #content #masthead>.wrapper>.row-1>.column-1{width:50%}
