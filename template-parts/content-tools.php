@@ -14,9 +14,13 @@
 	    <?php wp_nav_menu( array( 'theme_location' => 'tools' ) ); ?>
     </div><!--.column-1-->
     <div class="column-2">
-        <h1><?php the_title();?></h1>
-        <?php if(get_the_content()):
-            the_content();
-        endif;?>
+        <header>
+            <h1><?php the_title();?></h1>
+        </header>
+        <?php if(get_the_content()):?>
+            <div class="copy">
+                <?php the_content();?>
+            </div>
+        <?php endif;?>
     </div><!--.column-2-->
 </article><!-- #post-## -->

@@ -62,10 +62,6 @@
 			</ul><!-- slides -->
 		</div><!-- .flexslider -->
 	<?php endif; // end loop ?>
-
-	<div id="banner-star"><img src="<?php bloginfo('template_url'); ?>/images/banner-star.png" /></div>
-
 	<?php wp_reset_postdata(); ?>
-
 </div><!-- home banner container -->
 
