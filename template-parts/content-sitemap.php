@@ -9,13 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("template-page"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("template-sitemap"); ?>>
 	<header>
         <h1><?php the_title();?></h1>
     </header>
-	<?php if(get_the_content()):?>
         <div class="copy">
 			<?php the_content();?>
+			<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
         </div>
-	<?php endif;?>
 </article><!-- #post-## -->

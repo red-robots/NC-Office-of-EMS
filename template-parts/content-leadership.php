@@ -14,4 +14,20 @@
 			<?php the_content();?>
         </div>
 	<?php endif;?>
+    <?php $args = array(
+        'post_type'=>'leadership',
+        'posts_per_page'=>-1,
+        'order_by'=>'menu_order',
+    );
+    $query = new WP_Query($args);
+    if($query->has_posts()):?>
+        <div class="wrapper>">
+            <?php while($query->have_posts()):?>
+                <div class="leader">
+
+                </div><!--.leader-->
+            <?php endwhile;?>
+        </div><!--.wrapper-->
+    <?php wp_reset_postdata();
+    endif;?>
 </article><!-- #post-## -->
