@@ -21,6 +21,7 @@
         'post_type'=>'leadership',
         'posts_per_page'=>-1,
         'order_by'=>'menu_order',
+        'order'=>'ASC',
     );
     $query = new WP_Query($args);
     if($query->have_posts()):?>
