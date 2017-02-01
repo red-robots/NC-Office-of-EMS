@@ -14,20 +14,57 @@
 			<?php the_content();?>
         </div>
 	<?php endif;?>
-    <?php $args = array(
+    <?php
+    $phone_text = get_field("phone_text",13);
+    $email_text = get_field("email_text",13);
+    $args = array(
         'post_type'=>'leadership',
         'posts_per_page'=>-1,
         'order_by'=>'menu_order',
     );
     $query = new WP_Query($args);
-    if($query->has_posts()):?>
-        <div class="wrapper>">
-            <?php while($query->have_posts()):?>
-                <div class="leader">
-
+    if($query->have_posts()):?>
+        <div class="wrapper">
+            <?php while($query->have_posts()): $query->the_post();?>
+                <?php $image = get_field("picture");
+	            $copy = get_field("bio");
+	            $title = get_field("title");
+	            $phone = get_field("phone");
+	            $email = get_field("email");?>
+                <div class="leader clear-bottom">
+                    <div class="column-1">
+                        <?php if($image):?>
+                            <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
+                        <?php else: ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/leader_placeholder.png" alt="placeholder">
+                        <?php endif;?>
+                    </div><!--.column-1-->
+                    <div class="column-2">
+                        <h2><?php the_title();?></h2>
+	                    <?php if($title):?>
+                            <div class="title">
+			                    <?php echo $title;?>
+                            </div><!--.title-->
+	                    <?php endif;?>
+                        <?php if($copy):?>
+                            <div class="copy">
+                                <?php echo $copy;?>
+                            </div><!--.copy-->
+                        <?php endif;?>
+	                    <?php if($email):?>
+                            <div class="email">
+			                    <?php echo $email_text.' '.$email;?>
+                            </div><!--.email-->
+	                    <?php endif;?>
+	                    <?php if($phone):?>
+                            <div class="phone">
+			                    <?php echo $phone_text.' '.$phone;?>
+                            </div><!--.phone-->
+	                    <?php endif;?>
+                    </div><!--.column-2-->
                 </div><!--.leader-->
             <?php endwhile;?>
         </div><!--.wrapper-->
-    <?php wp_reset_postdata();
+        <?php wp_reset_postdata();
     endif;?>
 </article><!-- #post-## -->

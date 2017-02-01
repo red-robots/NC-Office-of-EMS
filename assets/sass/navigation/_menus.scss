@@ -4,6 +4,10 @@
   border-top: 2px solid grey;
   border-bottom: 4px solid black;
   padding: 10px 0;
+  text-align: center;
+  @media screen and (min-width: $tabwidth) {
+    padding: 0;
+  }
   &.toggled {
     ul {
       display: block;
@@ -13,18 +17,28 @@
     }
   }
   .menu-toggle {
-    margin: 0 auto 10px auto;
-    display: block;
+    text-shadow: none;
+    background-color: #00a2d9;
+    color: #fff;
+    box-shadow: none;
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
     @media screen and (min-width: $tabwidth) {
       display: none;
     }
   }
   ul {
     display: none;
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
     text-align: center;
     @media screen and (min-width: $tabwidth) {
+      margin: 0;
       @include flexbox;
       @include flexbox-align-content(center);
       @include flexbox-align-items(center);
@@ -32,23 +46,66 @@
       @include flexbox-wrap(wrap);
     }
     li {
+      position: relative;
       display: block;
       margin: 10px 8px;
       padding: 0;
-      list-style-type: none;
       font-size: 16px;
+      list-style-type: none;
       text-transform: uppercase;
+      font-family: 'Carrois Gothic', sans-serif;
       font-weight: 500;
       @media screen and (min-width: $tabwidth) {
         @include flexbox-flex(0,1,auto);
         margin: 0 8px;
+        line-height: 2.5;
         display: inline-block;
+        font-size: 18px;
+      }
+      &:hover {
+        ul.sub-menu {
+          display: block;
+          margin: 0;
+          @media screen and (min-width: $tabwidth) {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            z-index: 20;
+          }
+          li {
+            display: block;
+            a {
+              display: block;
+              font-size: 14px;
+              width: 100%;
+              color: $color__text-main;
+              text-align: center;
+              @media screen and (min-width: $tabwidth) {
+                width: 180px;
+                text-align: left;
+                line-height: 2.181818182;
+                padding: 8px 10px;
+                color: #fff;
+                background: #00848E;
+                &:hover {
+                  background-color: #1B9FAF;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
       }
       a {
         color: inherit;
         text-decoration: none;
         &:hover {
           color: inherit;
+        }
+      }
+      ul.sub-menu {
+        @media screen and (min-width: $tabwidth) {
+          display: none;
         }
       }
     }

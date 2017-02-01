@@ -11,128 +11,6 @@
     }
   }
   > .row-3 {
-    #map {
-      display: none;
-      @media screen and (min-width: $tabwidth) {
-        display: block;
-        width: 100%;
-      }
-      @media screen and (min-width: $deskwidth) {
-        width: 68%;
-        float: left;
-      }
-      img {
-        width: 100%;
-      }
-      map {
-        area {
-          &:hover {
-            background-color: black;
-            opacity: 0.2;
-          }
-        }
-      }
-    }
-    .list-container {
-      width: 100%;
-      @media screen and (min-width: $deskwidth) {
-        width: 30%;
-        float: right;
-      }
-      ul {
-        margin: 0;
-        padding: 0;
-        li {
-          list-style: none;
-          margin: 0;
-          display: block;
-          text-transform: uppercase;
-          &:first-child {
-            h2 {
-              margin: 0;
-            }
-          }
-          h2 {
-            margin: 15px 0 0 0;
-            a {
-              text-decoration: none;
-              color: $color__text-main;
-              @include flexbox;
-              @include flexbox-align-content(center);
-              @include flexbox-align-items(center);
-              @include flexbox-justify(space-between);
-              @include flexbox-wrap(nowrap);
-              &:hover {
-                text-decoration: none;
-                color: $color__text-main;
-              }
-              .co-logo {
-                @include flexbox-flex(0,1,auto);
-                width: 35%;
-                @media screen and (min-width: $tabwidth) {
-                  width: 20%;
-                  max-width: 120px;
-                }
-                img {
-                  width: 100%;
-                }
-              }
-              .down {
-                @include flexbox-flex(0,1,auto);
-                  width: 60%;
-                  font-size: 12px;
-              }
-
-              .color-box {
-                display: none;
-                @media screen and (min-width: $tabwidth) {
-                  @include flexbox-flex(0,1,auto);
-                  display: block;
-                  width: 10px;
-                  height: 10px;
-                  border: 1px solid #000000;
-                }
-                @media screen and (min-width: $deskwidth) {
-                  width: 20px;
-                  height: 20px;
-                }
-                &.color1b {
-                  background-color: #FE6602;
-                }
-
-                &.color2b {
-                  background-color: #7476C8;
-                }
-
-                &.color3b {
-                  background-color: #EE00FF;
-                }
-
-                &.color4b {
-                  background-color: #1200BF;
-                }
-
-                &.color5b {
-                  background-color: #16D2FF;
-                }
-
-                &.color6b {
-                  background-color: #BF0114;
-                }
-
-                &.color7b {
-                  background-color: #F0FC0A;
-                }
-
-                &.color8b {
-                  background-color: #008002;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 .template-tools {
@@ -157,21 +35,70 @@
     }
   }
   >.column-2 {
-    h1 {
+    header h1 {
       margin: 0;
     }
     .copy {
+      margin: 20px 0;
 
     }
   }
 }
-.template-sitemap, .template-page, .template-leadership {
+.template-sitemap, .template-page, .template-leadership, .template-map {
+  > header h1 {
 
+  }
+  >.copy {
+    margin: 20px 0;
+  }
 }
 .template-leadership {
   >.wrapper {
     .leader {
+      border-bottom: 1px solid lightgrey;
+      @media screen and (min-width: $tabwidth) {
+        padding: 40px;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      >.column-1 {
+        @media screen and (min-width: $tabwidth) {
+          width: 30%;
+          float: left;
+          margin: 0 5% 0 0;
+        }
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      >.column-2 {
+        @media screen and (min-width: $tabwidth) {
+          width: 65%;
+          float: left;
+        }
+        h2 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .title {
+          margin: 20px 0;
 
+        }
+        .copy {
+          margin: 20px 0;
+        }
+        .email {
+          margin: 20px 0;
+
+        }
+        .phone {
+          margin: 20px 0;
+
+        }
+      }
     }
   }
 }

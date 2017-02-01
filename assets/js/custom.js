@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.flexslider').imagesLoaded( function() {
         $('.flexslider').flexslider({
-            animation: "slide",
+            animation: "fade",
             smoothHeight: true,
         }); // end register flexslider
     });
@@ -66,15 +66,6 @@ jQuery(document).ready(function ($) {
 	    }, 500);
 	    return false;
 	});
-
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
 	
 	
 	/*
@@ -90,10 +81,11 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	new WOW().init();
+
     /* initialize map higlight */
     (function () {
         var $map = $('.map');
-        if($map.length===0 || $('map').length===0)
+        if($map.length===0 || $('map').length ===0)
             return;
         var imgSizeHolder = $map[0].naturalWidth;
         $areas = $('map').find('area');

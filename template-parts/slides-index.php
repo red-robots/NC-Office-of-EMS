@@ -62,6 +62,7 @@
 			</ul><!-- slides -->
 		</div><!-- .flexslider -->
 	<?php endif; // end loop ?>
+    <div id="symbol"><img src="<?php echo get_template_directory_uri(); ?>/images/symbol.png" /></div>
 	<?php wp_reset_postdata(); ?>
 </div><!-- home banner container -->
 

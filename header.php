@@ -48,7 +48,7 @@
                     <?php endif;?>
                 </div><!--.row-1-->
                 <nav id="site-navigation" class="main-navigation row-2" role="navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'acstarter' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                 </nav><!-- #site-navigation -->
             </div><!-- wrapper -->

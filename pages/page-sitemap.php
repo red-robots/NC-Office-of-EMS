@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Tools
+ * Template Name: Sitemap
  */
 
 get_header(); ?>
