@@ -1287,8 +1287,8 @@ a:hover,a:active{outline:0}
 @media screen and (min-width:700px){.main-navigation ul li:hover ul.sub-menu{position:absolute;top:40px;left:0;z-index:20}
 }.main-navigation ul li:hover ul.sub-menu li{display:block}
 .main-navigation ul li:hover ul.sub-menu li a{display:block;font-size:14px;width:100%;color:#404040;text-align:center}
-@media screen and (min-width:700px){.main-navigation ul li:hover ul.sub-menu li a{width:180px;text-align:left;line-height:2.181818182;padding:8px 10px;color:#fff;background:#00848e}
-.main-navigation ul li:hover ul.sub-menu li a:hover{background-color:#1b9faf;font-weight:700}
+@media screen and (min-width:700px){.main-navigation ul li:hover ul.sub-menu li a{width:180px;text-align:left;line-height:2.181818182;padding:8px 10px;color:#fff;background:#00a2d9}
+.main-navigation ul li:hover ul.sub-menu li a:hover{background-color:#00a2ff;font-weight:700}
 }.main-navigation ul li a{color:inherit;text-decoration:none}
 .main-navigation ul li a:hover{color:inherit}
 @media screen and (min-width:700px){.main-navigation ul li ul.sub-menu{display:none}
@@ -1501,6 +1501,8 @@ a{outline:0;color:#21759b;text-decoration:none}
 .template-leadership>.wrapper .leader>.column-2 .title{margin:20px 0}
 .template-leadership>.wrapper .leader>.column-2 .copy{margin:20px 0}
 .template-leadership>.wrapper .leader>.column-2 .email{margin:20px 0}
+.template-leadership>.wrapper .leader>.column-2 .email a{color:inherit;text-decoration:none}
+.template-leadership>.wrapper .leader>.column-2 .email a:hover{font-weight:700;cursor:pointer}
 .template-leadership>.wrapper .leader>.column-2 .phone{margin:20px 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}

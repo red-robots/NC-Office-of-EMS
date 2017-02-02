@@ -54,7 +54,7 @@
                         <?php endif;?>
 	                    <?php if($email):?>
                             <div class="email">
-			                    <?php echo $email_text.' '.$email;?>
+			                    <?php echo $email_text.' <a href="mailto:'.$email.'">'.$email.'</a>';?>
                             </div><!--.email-->
 	                    <?php endif;?>
 	                    <?php if($phone):?>
