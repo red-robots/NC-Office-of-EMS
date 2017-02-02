@@ -1497,13 +1497,14 @@ a{outline:0;color:#21759b;text-decoration:none}
 @media screen and (min-width:700px){.template-leadership>.wrapper .leader>.column-1{width:30%;float:left;margin:0 5% 0 0}
 }.template-leadership>.wrapper .leader>.column-1 img{display:block;width:100%}
 @media screen and (min-width:700px){.template-leadership>.wrapper .leader>.column-2{width:65%;float:left}
-}.template-leadership>.wrapper .leader>.column-2 h2{margin:0;font-size:18px;font-weight:500}
-.template-leadership>.wrapper .leader>.column-2 .title{margin:20px 0}
-.template-leadership>.wrapper .leader>.column-2 .copy{margin:20px 0}
-.template-leadership>.wrapper .leader>.column-2 .email{margin:20px 0}
-.template-leadership>.wrapper .leader>.column-2 .email a{color:inherit;text-decoration:none}
-.template-leadership>.wrapper .leader>.column-2 .email a:hover{font-weight:700;cursor:pointer}
-.template-leadership>.wrapper .leader>.column-2 .phone{margin:20px 0}
+}.template-leadership>.wrapper .leader .info h2{margin:20px 0;font-size:18px;font-weight:500}
+@media screen and (min-width:700px){.template-leadership>.wrapper .leader .info h2{margin:0}
+}.template-leadership>.wrapper .leader .info .title{margin:20px 0}
+.template-leadership>.wrapper .leader .info .copy{margin:20px 0}
+.template-leadership>.wrapper .leader .info .email{margin:20px 0}
+.template-leadership>.wrapper .leader .info .email a{color:inherit;text-decoration:none}
+.template-leadership>.wrapper .leader .info .email a:hover{font-weight:700;cursor:pointer}
+.template-leadership>.wrapper .leader .info .phone{margin:20px 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

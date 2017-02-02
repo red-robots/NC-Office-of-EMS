@@ -78,10 +78,15 @@
           width: 65%;
           float: left;
         }
+      }
+      .info {
         h2 {
-          margin: 0;
+          margin: 20px 0;
           font-size: 18px;
           font-weight: 500;
+          @media screen and (min-width: $tabwidth) {
+            margin: 0;
+          }
         }
         .title {
           margin: 20px 0;

@@ -33,36 +33,36 @@
 	            $phone = get_field("phone");
 	            $email = get_field("email");?>
                 <div class="leader clear-bottom">
-                    <div class="column-1">
-                        <?php if($image):?>
+	                <?php if($image):?>
+                        <div class="column-1">
                             <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
+                        </div><!--.column-1-->
+                        <div class="column-2 info">
                         <?php else: ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/leader_placeholder.png" alt="placeholder">
+                            <div class="row-1 info">
                         <?php endif;?>
-                    </div><!--.column-1-->
-                    <div class="column-2">
-                        <h2><?php the_title();?></h2>
-	                    <?php if($title):?>
-                            <div class="title">
-			                    <?php echo $title;?>
-                            </div><!--.title-->
-	                    <?php endif;?>
-                        <?php if($copy):?>
-                            <div class="copy">
-                                <?php echo $copy;?>
-                            </div><!--.copy-->
-                        <?php endif;?>
-	                    <?php if($email):?>
-                            <div class="email">
-			                    <?php echo $email_text.' <a href="mailto:'.$email.'">'.$email.'</a>';?>
-                            </div><!--.email-->
-	                    <?php endif;?>
-	                    <?php if($phone):?>
-                            <div class="phone">
-			                    <?php echo $phone_text.' '.$phone;?>
-                            </div><!--.phone-->
-	                    <?php endif;?>
-                    </div><!--.column-2-->
+                            <h2><?php the_title();?></h2>
+                            <?php if($title):?>
+                                <div class="title">
+                                    <?php echo $title;?>
+                                </div><!--.title-->
+                            <?php endif;?>
+                            <?php if($copy):?>
+                                <div class="copy">
+                                    <?php echo $copy;?>
+                                </div><!--.copy-->
+                            <?php endif;?>
+                            <?php if($email):?>
+                                <div class="email">
+                                    <?php echo $email_text.' <a href="mailto:'.$email.'">'.$email.'</a>';?>
+                                </div><!--.email-->
+                            <?php endif;?>
+                            <?php if($phone):?>
+                                <div class="phone">
+                                    <?php echo $phone_text.' '.$phone;?>
+                                </div><!--.phone-->
+                            <?php endif;?>
+                        </div><!--.column-2 || .row-1-->
                 </div><!--.leader-->
             <?php endwhile;?>
         </div><!--.wrapper-->
