@@ -147,22 +147,20 @@ html[xmlns] .flexslider .slides {
   content: '\f054';
 }
 .flex-direction-nav .flex-prev {
-  left: -50px;
+  left: -40px;
 }
 .flex-direction-nav .flex-next {
-  right: -50px;
+  right: -40px;
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
@@ -269,10 +267,10 @@ html[xmlns] .flexslider .slides {
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 10px;
+    left: -30px;
   }
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 10px;
+    right: -30px;
   }
 }

@@ -21,6 +21,18 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php if('yes' == get_field('turn_alert_message_on', 'option') )  : ?>
+    <div id="alert">
+        <div id="alert-inside">
+            <div id="alert-title">
+				<?php the_field('alert_title','option'); ?>
+            </div><!-- alert title -->
+            <div id="alert-message">
+				<?php the_field('alert_message','option'); ?>
+            </div><!--  alert message -->
+        </div><!-- alert -->
+    </div><!-- alert -->
+<?php endif; ?>
 <div id="page" class="site">
 	<div id="content" class="site-content wrapper">
         <header id="masthead" class="site-header" role="banner">

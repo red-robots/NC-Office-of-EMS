@@ -82,7 +82,28 @@ a {
     }
   }
 }
-
+#alert {
+  width: 100%;
+  background-color: #F92F3E;
+  color: #fff;
+  border: 1px #F00 solid;
+  padding: 0;
+  position: relative;
+  line-height: 1.4;
+  font-size: 16px;
+  z-index: 1000;
+  a {
+    color: #fff;
+  }
+  #alert-inside {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+      width: 1025px;
+    }
+  }
+}
 #page {
   width: 100%;
   background-image: url('images/background.png');

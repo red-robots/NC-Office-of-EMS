@@ -14,9 +14,9 @@ function my_login_logo() { ?>
 <style type="text/css">
   body.login div#login h1 a {
   	background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png);
-  	background-size: 327px 67px;
+  	background-size: 327px 125px;
   	width: 327px;
-  	height: 67px;
+  	height: 125px;
   }
 </style>
 <?php }
@@ -31,8 +31,17 @@ add_filter('login_headerurl','loginpage_custom_link');
 /*-------------------------------------
 	Favicon.
 ---------------------------------------*/
-function mytheme_favicon() { 
- echo '<link rel="shortcut icon" href="' . get_bloginfo('stylesheet_directory') . '/images/favicon.ico" >'; 
+function mytheme_favicon() {
+
+echo '<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/ncoems/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/wp-content/themes/ncoems/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/wp-content/themes/ncoems/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/wp-content/themes/ncoems/images/favicons/manifest.json">
+<link rel="mask-icon" href="/wp-content/themes/ncoems/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/wp-content/themes/ncoems/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/wp-content/themes/ncoems/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">';
+
 } 
 add_action('wp_head', 'mytheme_favicon');
 

@@ -1362,11 +1362,11 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav a:before{font-family:"FontAwesome";font-size:40px;line-height:1;display:inline-block;content:'\f053';color:rgba(0,0,0,0.3);text-shadow:1px 1px 0 rgba(255,255,255,0.3)}
 @media screen and (min-width:700px){.flex-direction-nav a:before{color:rgba(0,0,0,0.8)}
 }.flex-direction-nav a.flex-next:before{content:'\f054'}
-.flex-direction-nav .flex-prev{left:-50px}
-.flex-direction-nav .flex-next{right:-50px;text-align:right}
-.flexslider:hover .flex-direction-nav .flex-prev{opacity:.7;left:10px}
+.flex-direction-nav .flex-prev{left:-40px}
+.flex-direction-nav .flex-next{right:-40px;text-align:right}
+.flexslider:hover .flex-direction-nav .flex-prev{opacity:.7}
 .flexslider:hover .flex-direction-nav .flex-prev:hover{opacity:1}
-.flexslider:hover .flex-direction-nav .flex-next{opacity:.7;right:10px}
+.flexslider:hover .flex-direction-nav .flex-next{opacity:.7}
 .flexslider:hover .flex-direction-nav .flex-next:hover{opacity:1}
 .flex-direction-nav .flex-disabled{opacity:0 !important;filter:alpha(opacity=0);cursor:default}
 .flex-pauseplay a{display:block;width:20px;height:20px;position:absolute;bottom:5px;left:10px;opacity:.8;z-index:10;overflow:hidden;cursor:pointer;color:#000}
@@ -1383,8 +1383,8 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-control-thumbs img{width:100%;height:auto;display:block;opacity:.7;cursor:pointer;-webkit-transition:all 1s ease;transition:all 1s ease}
 .flex-control-thumbs img:hover{opacity:1}
 .flex-control-thumbs .flex-active{opacity:1;cursor:default}
-@media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
-.flex-direction-nav .flex-next{opacity:1;right:10px}
+@media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:-30px}
+.flex-direction-nav .flex-next{opacity:1;right:-30px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 .clear{clear:both}
@@ -1408,7 +1408,11 @@ a{outline:0;color:#21759b;text-decoration:none}
 .copy ul,.copy ol{padding:0;margin:0 0 10px 10px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0 0 0 20px;font-size:inherit;padding:0}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
-#page{width:100%;background-image:url("images/background.png");background-repeat:repeat}
+#alert{width:100%;background-color:#f92f3e;color:#fff;border:1px #F00 solid;padding:0;position:relative;line-height:1.4;font-size:16px;z-index:1000}
+#alert a{color:#fff}
+#alert #alert-inside{width:100%;padding:10px 10px 20px 10px;margin:0 auto}
+@media screen and (min-width:1200px){#alert #alert-inside{width:1025px}
+}#page{width:100%;background-image:url("images/background.png");background-repeat:repeat}
 #page #content{width:90%;padding:0 20px 20px 20px;margin:0 auto;background-color:white}
 @media screen and (min-width:700px){#page #content{padding:0 5% 20px 5%}
 }#page #content #masthead>.wrapper>.row-1{padding:10px 0 20px 0;margin:0 auto}
