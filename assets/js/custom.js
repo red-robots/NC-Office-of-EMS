@@ -13,11 +13,9 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	$("[href]").each(function() {
-        if (typeof window.location.href !== undefined && this.href == window.location.href) {
-            $(this).addClass("active");
-        }
-        else if(typeof window.location !== undefined && this.href == window.location){
-            $(this).addClass("active");
+	    console.log(this);
+    if (this.href == window.location.href) {
+        $(this).addClass("active");
         }
 	});
 	
