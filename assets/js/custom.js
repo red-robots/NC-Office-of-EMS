@@ -13,11 +13,10 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	$("[href]").each(function() {
-	    console.log(this);
-	    console.log("pending");
-        if (encodeURIComponent(this.href) == encodeURIComponent(window.location.href)) {
-            $(this).addClass("active");
-            console.log("success");
+	    var $this = $(this);
+	    var $this_href = $this.attr("href");
+        if ($this_href == window.location.href) {
+            $this.addClass("active");
         }
 	});
 	
