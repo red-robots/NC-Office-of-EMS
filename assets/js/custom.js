@@ -13,10 +13,10 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	$("[href]").each(function() {
-        if (window.location.href && this.href == window.location.href) {
+        if (typeof window.location.href !== undefined && this.href == window.location.href) {
             $(this).addClass("active");
         }
-        else if(window.location && this.href == window.location){
+        else if(typeof window.location !== undefined && this.href == window.location){
             $(this).addClass("active");
         }
 	});
