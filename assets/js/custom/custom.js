@@ -14,8 +14,10 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$("[href]").each(function() {
 	    console.log(this);
-    if (this.href == window.location.href) {
-        $(this).addClass("active");
+	    console.log("pending");
+        if (this.href == window.location.href) {
+            $(this).addClass("active");
+            console.log("success");
         }
 	});
 	
