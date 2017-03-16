@@ -13,8 +13,11 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	$("[href]").each(function() {
-    if (this.href == window.location.href) {
-        $(this).addClass("active");
+        if (window.location && this.href == window.location.href) {
+            $(this).addClass("active");
+        }
+        if(document.location && this.href == document.location.href){
+            $(this).addClass("active");
         }
 	});
 	
