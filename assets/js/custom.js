@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 	$("[href]").each(function() {
 	    console.log(this);
 	    console.log("pending");
-        if (this.href == window.location.href) {
+        if (encodeURIComponent(this.href) == encodeURIComponent(window.location.href)) {
             $(this).addClass("active");
             console.log("success");
         }
