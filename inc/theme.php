@@ -142,6 +142,7 @@ add_action( 'admin_menu', 'change_post_menu_label' );
 ---------------------------------------*/
 
 function ac_first_and_last_menu_class($items) {
+  $parent = array();
   foreach($items as $k => $v){
     $parent[$v->menu_item_parent][] = $v;
   }
