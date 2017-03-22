@@ -62,8 +62,8 @@
                     <h2 class="color1">
                         <a class="mactrac" href="http://www.matrac.com/" target="_blank">
                             <div class="color-box color1b"></div>
-                            <div class="co-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/matrac.png"/></div>
-                            <div class="down">Mountain Area Trauma RAC (Mission Hospitals)</div>
+                            <div class="co-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/mahpc.jpg"/></div>
+                            <div class="down">Mountain Area Healthcare Preparedness Coalition (MAHPC)</div>
                         </a>
                     </h2>
                 </li>
