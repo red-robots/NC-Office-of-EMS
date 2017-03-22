@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-tools template-two-column"); ?>>
     <div class="column-1">
         <div class="row-1">
-            <h2><?php the_title();?></h2>
+            <h2>REVC</h2>
 	        <?php wp_nav_menu( array( 'theme_location' => 'revc' ) ); ?>
         </div>
         <div class="row-2">
