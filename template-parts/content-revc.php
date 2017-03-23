@@ -15,10 +15,6 @@
             <h2>REVC</h2>
 	        <?php wp_nav_menu( array( 'theme_location' => 'revc' ) ); ?>
         </div>
-        <div class="row-2">
-            <h2>Tools</h2>
-            <?php wp_nav_menu( array( 'theme_location' => 'tools' ) ); ?>
-        </div>
     </div><!--.column-1-->
     <div class="column-2">
         <header>
