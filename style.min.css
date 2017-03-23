@@ -1435,8 +1435,8 @@ a{outline:0;color:#21759b;text-decoration:none}
 #page #colophon>.wrapper ul li a:hover{color:grey}
 .template-two-column{margin:20px 0 0 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 @media screen and (min-width:700px){.template-two-column{-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-}.template-two-column>.column-1{-webkit-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%;border-right:1px solid #ccc}
-@media screen and (min-width:700px){.template-two-column>.column-1{width:30%}
+}.template-two-column>.column-1{-webkit-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%}
+@media screen and (min-width:700px){.template-two-column>.column-1{width:30%;border-right:1px solid #ccc}
 }.template-two-column>.column-2{-webkit-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:100%}
 @media screen and (min-width:700px){.template-two-column>.column-2{width:60%}
 }#home-banner-container{width:100%;margin:10px auto 40px auto;position:relative}
@@ -1488,6 +1488,7 @@ a{outline:0;color:#21759b;text-decoration:none}
 .map-container .list-container ul li h2 a .color-box.color8b{background-color:#008002}
 .template-index>.row-2 h2{font-size:30px;font-weight:600;border-bottom:4px solid black;text-transform:uppercase}
 .template-index>.row-2 .copy{margin:40px 0}
+.template-tools>.column-1{padding-bottom:20px}
 .template-tools>.column-1 ul{padding:0;margin:0 0 0 20px;font-size:inherit}
 .template-tools>.column-1 ul li{margin:0 0 10px 20px;font-size:inherit;padding:0}
 .template-tools>.column-1 ul li:last-child{margin:0 0 0 20px}
