@@ -46,7 +46,7 @@
                     <?php endif;?>
                         <a href="<?php bloginfo('url');?>" class="clear-bottom">
                             <img src="<?php echo get_template_directory_uri().'/images/logo1.png';?>" alt="NCOEMS">
-                            <img src="<?php echo get_template_directory_uri().'/images/logo2.png';?>" alt="HPRRP">
+                            <img src="<?php echo get_template_directory_uri().'/images/logo2.jpg';?>" alt="HPRRP">
                         </a>
 	                <?php if(is_front_page()):?>
                         </h1>
