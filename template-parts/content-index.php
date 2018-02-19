@@ -46,7 +46,7 @@
                       href="http://www.caprac.com/" target="_blank" alt="capRac">
                 <area shape="poly"
                       coords="685,109,722,25,724,14,724,6,951,5,958,23,963,47,992,107,996,132,991,179,988,183,969,189,963,189,936,208,910,227,878,269,864,256,814,260,806,261,791,276,773,283,768,288,760,284,749,251,714,253,712,250,700,251,691,247,696,224,694,187,688,183,685,183,678,174,683,169,694,167,704,132,698,131,693,113,686,109"
-                      href="https://www.vidanthealth.com/Services-Treatments/Services/Emergency-Trauma?PageName=EHPC" target="_blank"
+                      href="http://easternhpc.com/" target="_blank"
                       alt="vidant">
                 <area shape="poly"
                       coords="766,287,750,299,742,308,732,320,724,346,714,361,706,363,692,360,672,361,667,363,661,365,652,368,591,309,596,303,599,297,604,297,605,290,610,289,616,281,616,273,623,255,616,247,611,235,627,233,656,235,676,257,674,263,683,271,698,251,710,250,714,253,748,251,759,283,765,286"
@@ -125,7 +125,7 @@
                 </li>
                 <li>
                     <h2 class="color7">
-                        <a href="https://www.vidanthealth.com/Services-Treatments/Services/Emergency-Trauma?PageName=EHPC" target="_blank">
+                        <a href="http://easternhpc.com/" target="_blank">
                         <div class="color-box color7b"></div>
                             <div class="co-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/vidant.png"/></div>
                             <div class="down">Eastern Healthcare Preparedness Coalition (Vidant Medical Center)</div>
