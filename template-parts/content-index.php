@@ -82,7 +82,7 @@
                         <a href="http://triadpreparedness.org/" target="_blank">
                             <div class="color-box color2b"></div>
                             <div class="co-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/triad.png"/></div>
-                            <div class="down">Triad Healthcare Preparedness Coalition (WFU Baptist/Moses Cone)</div>
+                            <div class="down">Triad Healthcare Preparedness Coalition</div>
                         </a>
                     </h2>
                 </li>
