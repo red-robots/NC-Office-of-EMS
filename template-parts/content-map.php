@@ -23,7 +23,7 @@
                       href="http://www.matrac.com/" target="_blank" alt="mactrac" class="mactrac">
                 <area shape="poly"
                       coords="300,2,348,2,388,3,438,5,543,4,538,45,538,143,508,144,467,145,404,144,379,143,384,130,374,117,366,117,358,100,338,104,330,112,324,106,312,109,306,101,292,94,284,81,292,69,282,64,282,56,273,48,274,43,271,39,280,34,285,30,294,34,291,24,296,18,296,4"
-                      href="http://triadpreparedness.org/" target="_blank" alt="thpc">
+                      href="https://triadhpc.org/" target="_blank" alt="thpc">
                 <area shape="poly"
                       coords="546,263,562,244,561,235,560,220,550,206,536,204,536,194,530,190,528,191,512,192,503,188,499,191,490,192,487,194,478,193,482,191,477,176,482,162,476,156,474,149,470,150,467,144,398,144,379,142,382,129,374,116,368,117,358,100,336,104,331,111,324,105,312,109,306,100,292,94,284,81,272,78,268,84,271,93,271,99,264,104,275,116,281,133,287,128,295,132,296,164,289,189,324,190,338,191,366,195,370,198,370,205,382,198,398,222,397,238,522,238,544,262"
                       href="http://metrolinapreparedness.org/mhpc/" target="_blank" alt="mhpc">
@@ -40,7 +40,7 @@
                       alt="vidant">
                 <area shape="poly"
                       coords="766,287,750,299,742,308,732,320,724,346,714,361,706,363,692,360,672,361,667,363,661,365,652,368,591,309,596,303,599,297,604,297,605,290,610,289,616,281,616,273,623,255,616,247,611,235,627,233,656,235,676,257,674,263,683,271,698,251,710,250,714,253,748,251,759,283,765,286"
-                      href="http://southeasternhpc.org/" target="_blank" alt="shpr">
+                      href="https://southeasternhpr.org/" target="_blank" alt="shpr">
                 <area shape="poly" coords="608,103,632,104,609,132,599,127,607,102"
                       href="http://trauma.duhs.duke.edu/regional-advisory-committee" target="_blank" alt="drac2"
                       class="drac">
@@ -69,7 +69,7 @@
                 </li>
                 <li>
                     <h2 class="color2">
-                        <a href="http://triadpreparedness.org/" target="_blank">
+                        <a href="https://triadhpc.org/" target="_blank">
                             <div class="color-box color2b"></div>
                             <div class="co-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/triad.png"/></div>
                             <div class="down">Triad Healthcare Preparedness Coalition</div>
@@ -124,7 +124,7 @@
                 </li>
                 <li>
                     <h2 class="color8">
-                        <a href="http://southeasternhpc.org/" target="_blank">
+                        <a href="https://southeasternhpr.org/" target="_blank">
                         <div class="color-box color8b"></div>
                             <div class="co-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/shpr.png"/></div>
                             <div class="down">Southeastern Healthcare Preparedness Region (New Hanover Regional)</div>
